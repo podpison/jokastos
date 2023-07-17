@@ -4,15 +4,15 @@ import { Metadata } from 'next';
 import { FC } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Jokastos',
-  description: 'The personal website for Alexey Uvarov',
+  title: 'About me | Jokastos',
+  description: 'A detailed description of the life of Alexey',
 }
 
-const MainPage: FC = () => {
+const WhatIDoPage: FC = () => {
   return <main>
-    <Heading text='This is my personal website' />
+    <Heading text='This is exactly who I am' />
     <Video />
   </main>
 };
 
-export default MainPage;
+export default WhatIDoPage;

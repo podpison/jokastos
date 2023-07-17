@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-main;
+
+    body {
+      @apply flex flex-col min-h-screen text-smoke overflow-x-hidden pb-5;
+      
+      main {
+        @apply container flex-[1_0_auto] px-4;
+      }
+    }
+  }
+}
+
+h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl
+}
