@@ -51,7 +51,7 @@ const MobileMenu: FC<Props> = ({ pages }) => {
       >
         {pages.map((page) => (
           <MenuItem key={page} onClick={handleCloseNavMenu}>
-            <Link className='text-center' href={`/${textToURL(page)}`}>
+            <Link className='text-secondary text-center no-underline' href={`/${textToURL(page)}`}>
               {page}
             </Link>
           </MenuItem>

@@ -10,7 +10,8 @@ export const metadata: Metadata = {
 
 const MainPage: FC = () => {
   return <main>
-    <Heading text='This is my personal website' />
+    <meta name="google-site-verification" content="2bco0LV7y4a5e4a_swVe81p-di_E3EGC49h3OvMjp0I" />
+    <Heading text='This is the personal website of Uvarov Alexey' />
     <Video />
   </main>
 };

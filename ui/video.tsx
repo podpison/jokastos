@@ -4,11 +4,11 @@ import YouTube from 'react-youtube';
 import { FC } from 'react';
 
 const Video: FC = () => {
-  return <Box className='mt-10 sm:mt-16 md:mt-20'>
+  return <Box className='flex mt-10 sm:mt-16 md:mt-20'>
     <YouTube
-      className='mx-auto'
+      className='mx-auto max-md:w-full'
       videoId='dQw4w9WgXcQ'
-      iframeClassName='w-full max-w-[800px] h-[270px] mx-auto smmd:h-[300px] md:h-[400px]'
+      iframeClassName='w-full max-w-[800px] h-[270px] mx-auto smmd:h-[300px] md:w-[700px] md:h-[400px]'
       opts={{
         playerVars: {
           // autoplay: 1,

@@ -34,7 +34,7 @@ const Header: FC = () => {
         <Box className='ml-auto mr-10'>
           <Tooltip title='My telegram'>
             <a className='group' href='https://t.me/podpisonn' target='_blank' rel='noopener noreferrer'>
-              <TelegramIcon className='transition-opacity group-hover:opacity-80' />
+              <TelegramIcon className='text-smoke transition-opacity group-hover:opacity-80' />
             </a>
           </Tooltip>
         </Box>

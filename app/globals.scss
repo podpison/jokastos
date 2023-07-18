@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    box-sizing: border-box
+  }
   html {
-    @apply bg-main;
+    @apply bg-main overflow-x-hidden;
 
     body {
-      @apply flex flex-col min-h-screen text-smoke overflow-x-hidden pb-5;
+      @apply flex flex-col min-h-screen text-smoke overflow-x-hidden m-0 pb-5;
       
       main {
         @apply container flex-[1_0_auto] px-4;
