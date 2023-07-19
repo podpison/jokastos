@@ -4,8 +4,8 @@ import { Metadata } from 'next';
 import { FC } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Jokastos',
-  description: 'This is the personal website of Uvarov Alexey',
+  title: 'Personal website of Alexey Uvarov | Jokastos',
+  description: 'This is the personal website of Uvarov Alexey where you can find everything you need about him. If you don\'t, you can get in touch with him',
   keywords: ['Alexey Uvarov', 'Uvarov', 'Alexey Uvarov personal website', 'personal webisite']
 }
 
