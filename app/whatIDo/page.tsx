@@ -5,7 +5,8 @@ import { FC } from 'react';
 
 export const metadata: Metadata = {
   title: 'What I do | Jokastos',
-  description: 'This is exactly what Alexey usually does',
+  description: 'This is exactly what Alexey Uvarov usually does',
+  keywords: ['Alexey Uvarov', 'what Alexey Uvarov do', 'what uvarov do']
 }
 
 const WhatIDoPage: FC = () => {

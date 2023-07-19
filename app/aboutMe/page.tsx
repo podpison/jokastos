@@ -5,7 +5,9 @@ import { FC } from 'react';
 
 export const metadata: Metadata = {
   title: 'About me | Jokastos',
-  description: 'A detailed description of the life of Alexey',
+  description: 'A detailed description of the life of Alexey Uvarov',
+  keywords: ['Alexey Uvarov', 'Uvarov', 'who is Alexey Uvarov', 'Alexey Uvarov biography'],
+  
 }
 
 const WhatIDoPage: FC = () => {
