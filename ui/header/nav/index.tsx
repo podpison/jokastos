@@ -10,7 +10,7 @@ type Props = {
 const Nav: FC<Props> = ({ pages, className }) => {
   let Items = pages.map((p, index) => <Item page={p} key={index} />);
 
-  return <nav>
+  return <nav className='w-full mx-auto'>
     <ul className={cn('justify-center flex-grow gap-x-2 md:flex', className)}>
       {Items}
     </ul>
