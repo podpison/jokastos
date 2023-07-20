@@ -1,3 +1,28 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+li {
+  list-style: none;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,15 +35,18 @@
     @apply bg-main overflow-x-hidden;
 
     body {
-      @apply flex flex-col min-h-screen text-smoke overflow-x-hidden m-0 pb-5;
+      @apply flex flex-col min-h-screen text-smoke overflow-x-hidden m-0 pb-10;
       
       main {
         @apply container flex-[1_0_auto] px-4;
       }
     }
   }
-}
 
-h1 {
-  @apply text-4xl sm:text-5xl md:text-6xl
+  .text36-60 {
+    @apply text-4xl sm:text-5xl md:text-6xl
+  }
+  .text30-48 {
+    @apply text-3xl sm:text-4xl md:text-5xl
+  }
 }

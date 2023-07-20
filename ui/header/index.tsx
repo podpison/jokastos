@@ -11,7 +11,7 @@ import MobileMenu from './mobileMenu';
 import { FC } from 'react';
 import textToURL from '@/helpers/textToURL';
 import Logo from './logo';
-import TelegramIcon from '@mui/icons-material/Telegram';
+import Contacts from '../contacts';
 
 export const pages = ['What I do', 'About me'];
 
@@ -31,13 +31,7 @@ const Header: FC = () => {
             </Link>
           ))}
         </Box>
-        <Box className='ml-auto mr-10'>
-          <Tooltip title='My telegram'>
-            <a className='group' href='https://t.me/podpisonn' target='_blank' rel='noopener noreferrer'>
-              <TelegramIcon className='text-smoke transition-opacity group-hover:opacity-80' />
-            </a>
-          </Tooltip>
-        </Box>
+        <Contacts className='ml-auto mr-10' />
         <Tooltip title="That is me">
           <IconButton sx={{ p: 0 }}>
             <Avatar alt="Alexey Uvarov" src="/static/images/avatar/2.jpg" />

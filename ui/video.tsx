@@ -11,7 +11,7 @@ const Video: FC = () => {
       iframeClassName='w-full max-w-[800px] h-[270px] mx-auto smmd:h-[300px] md:w-[700px] md:h-[400px]'
       opts={{
         playerVars: {
-          autoplay: 1,
+          // autoplay: 1,
         }
       }}
     />
