@@ -1,17 +1,14 @@
 'use client';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
-import Link from 'next/link';
 import MobileMenu from './mobileMenu';
 import { FC } from 'react';
-import textToURL from '@/helpers/textToURL';
 import Logo from './logo';
 import Contacts from '../contacts';
+import Nav from './nav';
 
 export const pages = ['What I do', 'About me'];
 
@@ -22,15 +19,7 @@ const Header: FC = () => {
       <Toolbar disableGutters>
         <Logo className='hidden mr-2 md:flex' />
         <MobileMenu pages={pages} />
-        <Box className='hidden justify-center flex-grow gap-x-2 md:flex'>
-          {pages.map((page) => (
-            <Link href={`/${textToURL(page)}`} key={page}>
-              <Button className='text-smoke'>
-                {page}
-              </Button>
-            </Link>
-          ))}
-        </Box>
+        <Nav className='hidden' pages={pages} />
         <Contacts className='ml-auto mr-10' />
         <Tooltip title="That is me">
           <IconButton sx={{ p: 0 }}>
